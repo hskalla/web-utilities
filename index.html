@@ -12,7 +12,7 @@
     function countUp() {
       steps_since_start += 1;
       document.getElementById("counter").innerHTML = Math.ceil(Math.log(steps_since_start / total_steps) * number);
-      if (steps_since_start >= number) {
+      if (steps_since_start >= total_steps) {
         document.getElementById("counter").innerHTML = number;
         clearInterval(animation);
       }
