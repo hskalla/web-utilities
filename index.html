@@ -13,6 +13,7 @@
   
       function countUp() {
         steps_since_start += 1;
+        console.log(Math.ceil(Math.log(steps_since_start / total_steps) + 1));
         document.getElementById("counter").innerHTML = Math.ceil((Math.log(steps_since_start / total_steps) + 1) * number);
         if (steps_since_start >= total_steps) {
           document.getElementById("counter").innerHTML = number;
